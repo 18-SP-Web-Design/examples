@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script
+              src="https://code.jquery.com/jquery-3.3.1.min.js"
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
+
+
+        <script>
+var consoleLine = "<p class=\"console-line\"></p>";
+
+console = {
+    log: function(text) {
+        $("#console-log").append($(consoleLine).html(text));
+    }
+};
+
+function seriesSum(numList) {
+    var s = 0;
+    for(var n in numList){
+        console.log(n);
+        s += parseInt(n);
+    }
+    console.log(s);
+}
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
+
+
+<div id="console-log"></div>
+
+<button type="button" onclick="seriesSum([1,2,3,4,5,6])">Click Here</button>
+
