@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <label>Name:
+            <input type="text" name="name">
+        </label><br>
+
+        <label>Answer:
+            <input type="number" name="answer">
+        </label>
+
+        <script>
+
+var inputs = document.getElementsByTagName("input");
+
+for (var i = 0; i < inputs.length; i++) {
+    var input = inputs[i];
+    input.style.border = "1px solid red";
+    input.addEventListener("focus", function() {
+        this.style.border = "1px solid green";
+    });
+    input.addEventListener("blur", function() {
+        this.style.border = "1px solid blue";
+    });
+}
+
+        </script>
+    </body>
+</html>
