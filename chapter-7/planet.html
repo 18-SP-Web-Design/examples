@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title></title>
     <script>
+        function changePage() {
+            var p = document.getElementById("p2");
+            p.removeAttribute("hidden");
+
+            span = document.getElementById("lastPlanet");
+            span.innerHTML = "Neptune";
+            span.style.textDecoration = "underline";
+        }
 
     </script>
 </head>
@@ -15,7 +23,7 @@
 
    <p><span id="lastPlanet">Pluto</span> is the farthest planet from the Sun.</p>
 
-   <input type="button" value="Use Current Astronomy" onClick="changePage()">
+   <input type="button" value="Use Current Astronomy" onClick="changePage();"/>
     
 </body>
 </html>

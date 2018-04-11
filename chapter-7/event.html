@@ -14,20 +14,18 @@
         </label>
 
         <script>
-
 var inputs = document.getElementsByTagName("input");
 
 for (var i = 0; i < inputs.length; i++) {
-    var input = inputs[i];
-    input.style.border = "1px solid red";
-    input.addEventListener("focus", function() {
-        this.style.border = "1px solid green";
-    });
-    input.addEventListener("blur", function() {
-        this.style.border = "1px solid blue";
-    });
+   var input = inputs[i];
+   input.style.border = "1px solid red";
+   input.addEventListener("focus", function() {
+      this.style.border = "1px solid green";
+   });
+   input.addEventListener("blur", function() {
+      this.style.border = "1px solid blue";
+   });
 }
-
         </script>
     </body>
 </html>
